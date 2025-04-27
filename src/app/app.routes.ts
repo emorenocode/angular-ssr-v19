@@ -16,4 +16,9 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./pages/contact/contact-page').then((c) => c.ContactPage),
   },
+  {
+    path: 'user/:userId',
+    loadComponent: () =>
+      import('./pages/user/user-page').then((c) => c.UserPage),
+  },
 ];
